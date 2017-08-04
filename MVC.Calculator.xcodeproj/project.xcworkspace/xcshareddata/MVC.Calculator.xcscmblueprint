@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "31C513EACEDDF566DA67C1AFD01C617F34BEE7C6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "31C513EACEDDF566DA67C1AFD01C617F34BEE7C6" : 9223372036854775807,
+    "9EC1A03F3FC0EC629F589C7B3C48B7888D429C69" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "34618611-CB89-48D9-B7EF-40B63ACE0822",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "31C513EACEDDF566DA67C1AFD01C617F34BEE7C6" : "HomeWork5\/",
+    "9EC1A03F3FC0EC629F589C7B3C48B7888D429C69" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MVC.Calculator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MVC.Calculator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rbakhilov\/HomeWork5.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31C513EACEDDF566DA67C1AFD01C617F34BEE7C6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rbakhilov\/HomeWork1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9EC1A03F3FC0EC629F589C7B3C48B7888D429C69"
+    }
+  ]
+}
