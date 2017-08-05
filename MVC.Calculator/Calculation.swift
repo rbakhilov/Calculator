@@ -32,8 +32,6 @@ class Calculation {
         ".": operation.Dot
     ]
     
-    
-    
     enum operation {
         case UnaryOperation((Double) -> Double)
         case BinaryOperation((Double, Double) -> Double)
