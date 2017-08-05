@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var displayLabel: UILabel!
     
     var stillTyping = false
+    var dotIsPlaced = true
 
     @IBAction func numberPressed(_ sender: UIButton) {
         
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
         } else {
             displayLabel.text = number
             stillTyping = true
+            dotIsPlaced = true
         }
      }
     
@@ -43,11 +45,21 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func OnTouchDot(_ sender: Any) {
+        if stillTyping && !dotIsPlaced {
+            displayLabel.text = displayLabel.text! + "."
+            dotIsPlaced = true
+        } else if !stillTyping && !dotIsPlaced {
+            displayLabel.text = "0."
+            stillTyping = true
+        }
+    }
     @IBAction func onTouchOpertion(_ sender: UIButton) {
         
         if stillTyping {
             operation.setOperand(operand: displayValue)
             stillTyping = false
+            dotIsPlaced = true
         }
         
         if let mathSymbol = sender.currentTitle {

@@ -41,7 +41,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="79.5" height="85.5"/>
                                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="40"/>
-                                                        <state key="normal" title="C">
+                                                        <state key="normal" title="c">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
@@ -263,7 +263,7 @@
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="onTouchOpertion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCm-xL-9AO"/>
+                                                            <action selector="OnTouchDot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qbw-oT-unV"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qD9-wb-F38">
