@@ -21,12 +21,12 @@ class Calculation {
     
     var Operation = [
         "√": operation.UnaryOperation(sqrt),
-        "+/-":operation.UnaryOperation({-$0}),
-        "×": operation.BinaryOperation({$0 * $1}),
-        "÷": operation.BinaryOperation({$0 / $1}),
+        "+/-":operation.UnaryOperation(-),
+        "×": operation.BinaryOperation(*),
+        "÷": operation.BinaryOperation(/),
         "%": operation.UnaryOperation({$0 / oneHunder}),
-        "−": operation.BinaryOperation({$0 - $1}),
-        "+": operation.BinaryOperation({$0 + $1}),
+        "−": operation.BinaryOperation(-),
+        "+": operation.BinaryOperation(+),
         "=": operation.Equals,
         "C": operation.Clear,
         ".": operation.Dot

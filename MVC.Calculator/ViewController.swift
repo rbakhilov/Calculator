@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var displayLabel: UILabel!
     
     var stillTyping = false
-    var dotIsPlaced = true
+    var dotIsPlaced = false
 
     @IBAction func numberPressed(_ sender: UIButton) {
         
@@ -45,13 +45,16 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func OnTouchDot(_ sender: Any) {
-        if stillTyping && !dotIsPlaced {
-            displayLabel.text = displayLabel.text! + "."
-            dotIsPlaced = true
-        } else if !stillTyping && !dotIsPlaced {
-            displayLabel.text = "0."
+    @IBAction func OnTouchDot(_ sender: UIButton) {
+        if !stillTyping {
+            displayLabel.text = "0" + sender.currentTitle!
             stillTyping = true
+            dotIsPlaced = true
+        } else {
+            if !dotIsPlaced {
+                displayLabel.text = displayLabel.text! + sender.currentTitle!
+                dotIsPlaced = true
+            }
         }
     }
     @IBAction func onTouchOpertion(_ sender: UIButton) {
