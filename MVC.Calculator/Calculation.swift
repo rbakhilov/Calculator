@@ -8,8 +8,7 @@
 
 import Foundation
 
-let oneHunder = 100.0
-var dotIsPlaced = false
+let oneHundred = 100.00
 
 class Calculation {
     
@@ -20,16 +19,14 @@ class Calculation {
     }
     
     var Operation = [
-        "√": operation.UnaryOperation(sqrt),
         "+/-":operation.UnaryOperation(-),
         "×": operation.BinaryOperation(*),
         "÷": operation.BinaryOperation(/),
-        "%": operation.UnaryOperation({$0 / oneHunder}),
+        "%": operation.UnaryOperation({$0 / oneHundred}),
         "−": operation.BinaryOperation(-),
         "+": operation.BinaryOperation(+),
         "=": operation.Equals,
-        "C": operation.Clear,
-        ".": operation.Dot
+        "c": operation.Clear,
     ]
     
     enum operation {
@@ -37,7 +34,6 @@ class Calculation {
         case BinaryOperation((Double, Double) -> Double)
         case Equals
         case Clear
-        case Dot
     }
     
     func performOperation(symbol: String)  {
@@ -48,7 +44,6 @@ class Calculation {
             pending = pendingBinaryOperationInfo(binaryOperation: function, firstOperand: boofer)
             case .Equals: executeEquels()
             case .Clear: executeClear()
-            case .Dot: dotButtonPressed()
             }
         }
 
@@ -64,10 +59,6 @@ class Calculation {
     func executeClear() {
         pending = nil
         boofer = 0
-    }
-    
-    func dotButtonPressed() {
-        
     }
    
     var pending: pendingBinaryOperationInfo?
