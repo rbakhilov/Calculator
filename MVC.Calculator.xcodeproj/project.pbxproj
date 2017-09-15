@@ -42,7 +42,6 @@
 			children = (
 				30B251211F2DAFFC00510953 /* AppDelegate.swift */,
 				30B251281F2DAFFC00510953 /* Assets.xcassets */,
-				30B2512A1F2DAFFC00510953 /* LaunchScreen.storyboard */,
 				30B2512D1F2DAFFC00510953 /* Info.plist */,
 			);
 			name = Supported;
@@ -70,7 +69,7 @@
 				301C10B21F2DB21400E2CF12 /* Supported */,
 				30CFFA7A1F30BD8E008E6F89 /* Controllers */,
 				30CFFA791F30BD86008E6F89 /* Model */,
-				30CFFA7B1F30BDD6008E6F89 /* View */,
+				30CFFA7B1F30BDD6008E6F89 /* Storyboards */,
 			);
 			path = MVC.Calculator;
 			sourceTree = "<group>";
@@ -91,12 +90,13 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		30CFFA7B1F30BDD6008E6F89 /* View */ = {
+		30CFFA7B1F30BDD6008E6F89 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				30B2512A1F2DAFFC00510953 /* LaunchScreen.storyboard */,
 				301C10B51F2E07CA00E2CF12 /* Main.storyboard */,
 			);
-			name = View;
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

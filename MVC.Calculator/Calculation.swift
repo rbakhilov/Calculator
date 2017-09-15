@@ -8,8 +8,6 @@
 
 import Foundation
 
-let oneHundred = 100.00
-
 class Calculation {
     
     var boofer = 0.0
@@ -22,7 +20,7 @@ class Calculation {
         "+/-":operation.UnaryOperation(-),
         "×": operation.BinaryOperation(*),
         "÷": operation.BinaryOperation(/),
-        "%": operation.UnaryOperation({$0 / oneHundred}),
+        "%": operation.UnaryOperation({$0 / 100.00}),
         "−": operation.BinaryOperation(-),
         "+": operation.BinaryOperation(+),
         "=": operation.Equals,

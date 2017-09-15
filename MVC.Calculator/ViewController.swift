@@ -10,29 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let decimalChar = "."
-    var stillTyping = false
-    var operation = Calculation()
-    var displayValue: Double {
-        get {
-            return Double(displayLabel.text!)!
-        }
-        set {
-            if newValue.isInfinite {
-                displayLabel.text = "Error"
-            } else if newValue == Double(Int(newValue)) {
-                displayLabel.text = String(Int(newValue))
-            } else {
-                displayLabel.text = String(newValue)
-            }
-        }
-    }
-    
-    @IBOutlet weak var displayLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    let decimalChar = "."
+    var stillTyping = false
+    var operation = Calculation()
+    
+    @IBOutlet weak var displayLabel: UILabel!
+    
+    var displayValue: Double {
+        get {
+            return NumberFormatter().number(from: displayLabel.text!)!.doubleValue
+        }
+        set{
+            displayLabel.text = "\(newValue)"
+            stillTyping = false
+        }
     }
 
     @IBAction func numberPressed(_ sender: UIButton) {
@@ -46,14 +42,13 @@ class ViewController: UIViewController {
         } else {
             if number == decimalChar {
                 displayLabel.text = "0\(number)"
-        } else {
-            displayLabel.text = number
+            } else {
+                displayLabel.text = number
+            }
         }
-     }
         stillTyping = true
     }
     
-   
     @IBAction func onTouchOpertion(_ sender: UIButton) {
         
         if stillTyping {
@@ -68,6 +63,7 @@ class ViewController: UIViewController {
     }
     
 }
+
 
 
 
